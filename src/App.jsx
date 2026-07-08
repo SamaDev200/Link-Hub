@@ -10,6 +10,7 @@ const CONTACTS = [
     value: '@Sama_Dev',
     url: 'https://t.me/Sama_Dev',
     icon: FaTelegramPlane,
+    iconClass: 'text-[#2AABEE]',
   },
   {
     id: 'gh',
@@ -17,6 +18,7 @@ const CONTACTS = [
     value: 'SamaDev200',
     url: 'https://github.com/SamaDev200',
     icon: FaGithub,
+    iconClass: 'text-white',
   },
   {
     id: 'in',
@@ -24,6 +26,7 @@ const CONTACTS = [
     value: 'samadev',
     url: 'https://linkedin.com/in/samadev',
     icon: FaLinkedin,
+    iconClass: 'text-[#0077B5]',
   },
   {
     id: 'ig',
@@ -31,6 +34,7 @@ const CONTACTS = [
     value: 'saman_darbek2000',
     url: 'https://instagram.com/saman_darbek2000',
     icon: FaInstagram,
+    iconClass: 'text-[#E1306C]',
   },
   {
     id: 'email',
@@ -38,6 +42,7 @@ const CONTACTS = [
     value: 'darbeksaman320@gmail.com',
     url: 'mailto:darbeksaman320@gmail.com',
     icon: FaEnvelope,
+    iconClass: 'text-[#EA4335]',
   },
   {
     id: 'phone',
@@ -45,6 +50,7 @@ const CONTACTS = [
     value: '+998 99 662 56 02',
     url: 'tel:+998996625602',
     icon: FaPhone,
+    iconClass: 'text-[#34A853]',
   }
 ];
 
@@ -149,7 +155,7 @@ function App() {
                     className="group relative flex items-center justify-between p-5 rounded-xl border border-zinc-800 bg-zinc-900/30 hover:bg-zinc-900/60 hover:border-zinc-700 transition-all duration-200 overflow-hidden"
                   >
                     <div className="flex items-center gap-4 relative z-10">
-                      <div className="p-2.5 rounded-lg bg-zinc-950 border border-zinc-800 text-zinc-400 group-hover:text-zinc-100 group-hover:border-zinc-700 transition-colors">
+                      <div className={`p-2.5 rounded-lg bg-zinc-950 border border-zinc-800 ${contact.iconClass} transition-colors`}>
                         <Icon size={20} />
                       </div>
                       <div className="min-w-0">
