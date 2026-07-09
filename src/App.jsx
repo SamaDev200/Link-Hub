@@ -89,9 +89,9 @@ function App() {
             <div className="flex flex-col items-center text-center lg:items-start lg:text-left mb-6">
               <div className="w-24 h-24 rounded-full border border-zinc-800 overflow-hidden mb-4 bg-zinc-950 flex items-center justify-center relative">
                 <img 
-                  src="/profile_nobg.png" 
+                  src="/profile.jpg" 
                   alt="Samadev"
-                  className="w-full h-full object-cover object-top scale-[1.35] translate-y-1.5 relative z-10"
+                  className="w-full h-full object-cover relative z-10"
                 />
               </div>
               <div className="flex items-center gap-2 mb-1">
